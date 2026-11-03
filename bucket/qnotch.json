@@ -1,0 +1,35 @@
+{
+    "version": "0.8.4",
+    "description": "A small notch at the top of your desktop for music, system stats, files, clipboard history, and coding agents. Hover it to open the panel.",
+    "homepage": "https://qnot.ch",
+    "license": "MIT",
+    "notes": "QNotch can also update itself from Settings, About. Run `qnotch usage --json` or `qnotch agents --json` while it runs.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Somafet/qnotch/releases/download/v0.8.4/QNotch-self-contained.zip",
+            "hash": "4cefefadebb0193f2574d0ee8c9d5213ff24315f649d228958985c4c13872913"
+        }
+    },
+    "bin": [
+        [
+            "QNotch.exe",
+            "qnotch"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "QNotch.exe",
+            "QNotch"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Somafet/qnotch"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Somafet/qnotch/releases/download/v$version/QNotch-self-contained.zip"
+            }
+        }
+    }
+}
